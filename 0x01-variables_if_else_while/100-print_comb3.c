@@ -3,7 +3,7 @@
 /**
  * main  Prints all possible combination of two different digits,
  *       in asccinding order, separtaed by comma followed by space.
- *Return Always 0>
+ *Return Always 0.
  */
 int main(void)
 {
