@@ -17,12 +17,16 @@ putchar((num1 % 10) + '0');
 putchar(' ');
 putchar((num2 / 10) + '0');
 putchar((num2 % 10) + '0');
+
 if (num1 == 98 && num2 == 99)
 continue;
+
 putchar(',');
 putchar(' ');
 }
 }
+
 putchar('\n');
+
 return (0);
 }
