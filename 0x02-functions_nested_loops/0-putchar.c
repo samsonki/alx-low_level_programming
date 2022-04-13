@@ -1,5 +1,5 @@
 #include "main.h"
-i/**
+/**
  * main - Entry point.
  * Description: write a program that prints "_putchar" followed by a new line.
  * Return: Always 0 (Success.)
@@ -7,13 +7,11 @@ i/**
 int main(void)
 {
 	char ermias[] = "_putchar";
-
 	int c;
-
 	for (c = 0; c < 8; c++)
 	{ 
 		_putchar(ermias[c]);
 	}
-		_putchar('\n');
-		return (0);
+	_putchar('\n');
+	return (0);
 }
