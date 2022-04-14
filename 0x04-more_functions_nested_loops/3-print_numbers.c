@@ -2,10 +2,14 @@
 
 /**
  * print_numbers - print numbers 0-9
+ *
+ * Return: 0-9 followed by newline
  */
 void print_numbers(void)
 {
-	for (int n = 48; n <= 57; n++)
-		_putchar(n);
+	int i,
+
+	for (i = 0; n <= 9; n++)
+		_putchar(i + '0');
 	_putchar('\n');
 }
