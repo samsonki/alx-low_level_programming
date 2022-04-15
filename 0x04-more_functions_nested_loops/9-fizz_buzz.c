@@ -1,4 +1,4 @@
-#innclude <stdio.h>
+#include <stdio.h>
 /**
  * main - replace multiples of 3 and 5
  *
