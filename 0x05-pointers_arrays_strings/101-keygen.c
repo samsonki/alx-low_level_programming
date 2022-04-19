@@ -3,7 +3,6 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * My task
  */
 int main(void)
 {
