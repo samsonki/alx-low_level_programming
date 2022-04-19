@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdilb.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
  * My task
  */
