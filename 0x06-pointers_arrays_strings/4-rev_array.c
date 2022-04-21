@@ -1,36 +1,32 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string.
- * @s: Pointer to Char
- * Return: char.
+ * reverse_array - function that reverses the content of an array of integers.
+ *
+ * @a: pointer of array int
+ * @n: the number of elements to swap
+ *
+ * Return: nothing
  */
 
-char *cap_string(char *s)
+void reverse_array(int *a, int n)
 {
 	int i = 0;
+	int j = 0;
+	int *init, *final;
+	int aux = 0;
 
-	while (*(s + i) != '\0')
+	init = a;
+	final = a;
+	n -= 1;
+	while (i < n)
+		i += 1;
+	while (j <= i)
 	{
-		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
-		{
-			*(s + i) = *(s + i) - ' ';
-			i++;
-		}
-		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-		    || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-		    || *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-		    || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-		    || *(s + i) == '.')
-		{
-			i++;
-			if (*(s + i) >= 97 && *(s + i) <= 122)
-			{
-				*(s + i) = *(s + i) - ' ';
-			}
-		}
-		else
-			i++;
+		aux = *(init + j);
+		*(init + j) = *(final + i);
+		*(final + i) = aux;
+		j++;
+		i--;
 	}
-	return (s);
 }
